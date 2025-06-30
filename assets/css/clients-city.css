@@ -1,0 +1,40 @@
+.clients-{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    border: 1px transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: auto;
+}
+.clients- h2{
+    font-size: 2.5rem;
+    color: #001f3f;
+    margin-bottom: 5px;
+}
+.clients- p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.subtext{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.clients- .clients-images{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow: hidden;
+    margin: 20px 0 20px 0;
+}
+.clients-images img{
+    height: 100px;
+    width: 120px;
+}

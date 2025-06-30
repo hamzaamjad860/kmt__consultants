@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* navbar section starts here  */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 0px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 10px solid #001f3f;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    height: 70px;
+    width: 90px;
+}
+
+.nav-items {
+    margin-left: 40px;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.slogan {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 0 12px;
+}
+
+.slogan span {
+    font-weight: bold;
+    color: orange;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav-links a {
+    padding: 2px 12px;
+    border-left: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:first-child {
+    border-left: none;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.login-btn,
+.signup-btn {
+    font-size: 16px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #001f3f;
+    border: 1.5px solid #001f3f;
+}
+
+.login-btn:hover {
+    background-color: #001f3f;
+    color: #fff;
+}
+
+.signup-btn {
+    background-color: orange;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #e65c00;
+}
+
+
+/* navbar section ends here */
+
+
+/* image slider section starts here  */
+
+.slider-section {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 1000px;
+    height: 450px;
+    object-fit: cover;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* image slider section ends gere  */
+
+
+
+/* news section starts here  */
+
+
+.news-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.news-card {
+    border-top: 10px solid #001f3f;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.news-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    overflow: hidden;
+    max-height: 70px;
+    transition: max-height 0.3s ease;
+}
+
+.news-description.expanded {
+    max-height: 300px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #1a73e8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* news section ends here  */
+
+
+/* clients section starts here  */
+
+
+.client-sec {
+    max-width: 1000px;
+    margin: 20px auto;
+    border-top: 10px solid #001f3f;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-sec .clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto;
+    gap: 30px;
+}
+
+.client-card img {
+    height: 80px;
+    width: 80px;
+}
+
+/* news section ends here  */
+
+
+/* services section starts here  */
+
+
+.service {
+    width: 1000px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.service-heading {
+    margin: 10px 0 20px 0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    /* place-items: center; */
+    width: 100%;
+    height: 100%;
+    padding: 32px 16px;
+    background: linear-gradient(#ffffff 50%, orange 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 16px 0;
+    text-decoration: none;
+    padding: 16px 0;
+}
+
+p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.icon-wrapper {
+    background-color: #001f3f;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-position: 0 100%;
+}
+
+.card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #001f3f;
+}
+
+.card:hover a {
+    color: #ffffff;
+}
+
+.card:hover p {
+    color: #f0f0f0;
+}
+
+.service button{
+    margin: 40px 0 0 0;
+    max-width: 150px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.3 ease-in-out;
+}
+.service button:hover{
+    background-color: #001f3f;
+}
+.service button a{
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+/* services section ends here  */
+
+
+/* client testimonial section starts here  */
+
+
+.testimonial-section {
+    max-width: 1000px;
+    margin: 0px 40px 40px 172px;
+    border-top: 10px solid #001f3f;
+    border-bottom: 10px solid #001f3f;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-section h2 {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.testimonial-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    height: 180px;
+}
+
+.testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 0 20px;
+}
+
+.testimonial.active {
+    opacity: 1;
+    position: relative;
+}
+
+.testimonial .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info img{
+    height: 20px;
+    width: 20px;
+}
+
+.testimonial p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.testimonial span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* client testimonial section ends here  */
+
+
+/* footer starts here  */
+
+
+.footer{
+    background-color: #001f3f;
+    color: #ddd;
+    padding: 15px 20px 15px 20px;
+}
+.footer .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-links a{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3 ease;
+}
+.footer-links a:hover{
+    color: orange;
+}
+.footer-bottom{
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid orange;
+    padding-top: 15px;
+    color: #aaa;
+}

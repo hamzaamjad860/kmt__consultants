@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <meta content="Home" name="keywords">
+    <meta content="Home" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/registration.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- hedaer starts here  -->
+    <header class="navbar">
+
+        <div class="nav">
+            <a href="http://www.kmtcpk.com">
+                <img src="./images/logo.png" alt="KMTCPK">
+            </a>
+
+            <div class="nav-items">
+                <nav class="nav-links">
+                    <a href="./home.html">Home</a>
+                    <a href="./about.html">About us</a>
+                    <a href="./clients.html">Clients</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./downloads.html">Downloads</a>
+                    <a href="./contact.html">Contact Us</a>
+                </nav>
+                <!-- <div class="divider"></div> -->
+                <p class="slogan">We make difficult things, <span>Easy</span></p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="./members-login.html" class="login-btn">Member Login</a>
+            <a href="./registration.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+
+
+    <!-- registration form section starts here  -->
+
+
+    <main class="contact-wrapper">
+        <!-- ===== Contact Form ===== -->
+        <section class="contact-card contact-form">
+            <h2>Sign Up</h2>
+            <form id="contactForm" action="/registration" method="post">
+                <div class="field">
+                    <label for="name">First Name</label>
+                    <input id="name" name="name" type="text" required placeholder="Your first name">
+                </div>
+
+                <div class="field">
+                    <label for="name2">Second Name</label>
+                    <input id="name2" name="name2" type="text" required placeholder="Your second name">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" required placeholder="Enter password">
+                </div>
+                <div class="field">
+                    <label for="password2">Confirm Password</label>
+                    <input id="password2" name="password2" type="password" required placeholder="Confirm password">
+                </div>
+                <div class="field">
+                    <label for="City">City</label>
+                    <input id="City" name="City" type="text" required placeholder="Enter your city">
+                </div>
+                <div class="field">
+                    <label for="country">Country</label>
+                    <select name="country" id="country" required>
+                        <option value="">Select Your Country..</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="State">State</label>
+                    <input id="State" name="State" type="text" required placeholder="Enter your State">
+                </div>
+                <div class="field">
+                    <label for="zip">Zip/Postal Code</label>
+                    <input id="zip" name="zip" type="text" required placeholder="Enter your Zip/Postal Code">
+                </div>
+                <div class="field">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="number" required placeholder="Enter your Phone">
+                </div>
+                <div class="field">
+                    <label for="address">Address</label>
+                    <textarea name="adress" id="address" placeholder="Enter your address"></textarea>
+                </div>
+
+
+
+                <button type="submit" class="send-btn">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <!-- registration form section ends here  -->
+
+
+    <!-- footer starts here  -->
+
+
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./services.html">Services</a>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./members-login.html">Members</a>
+            <a href="./downloads.html">Downloads</a>
+            <a href="./contact.html">Contact Us</a></li>
+            <a href="./sitemap.html">Sitemap</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span>&nbsp;&nbsp;KMT Consultants</p>
+        </div>
+    </footer>
+
+    <!-- footer ends here  -->
+
+    <script src="./js/registration.js"></script>
+</body>
+
+</html>

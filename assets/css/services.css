@@ -1,0 +1,46 @@
+.services-section{
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.services-section h2{
+    font-size: 2.5rem;
+    color: #001f3f;
+}
+.service-card{
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px transparent;
+    border-radius: 15px;
+    border-top: 10px solid #001f3f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.service-card h3{
+    color: orange;
+    font-size: 1.6rem;
+}
+.service-card p{
+    font-size: 1.1rem;
+}
+
+.services-btns{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.services-btns a{
+    font-size: 1rem;
+    background-color: orange;
+    border: 1px transparent;
+    border-radius: 99px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    transition: background 0.3 ease;
+}
+.services-btns a:hover{
+    background-color: rgb(223, 145, 1);
+}

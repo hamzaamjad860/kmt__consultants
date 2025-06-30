@@ -1,0 +1,153 @@
+    /* ----------  Root + background  ---------- */
+    :root {
+      --clr-form:  hsla(27, 88%, 50%, 0.25);   /* teal glass */
+      --clr-info:  hsla(246, 61%, 22%, 0.25);   /* purple glass */
+      --blur: 14px;
+      --radius: 1.25rem;
+      --shadow: 0 12px 24px rgba(0,0,0,.15);
+      --transition: .35s cubic-bezier(.42,0,.29,1);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: "Inter", sans-serif;
+      line-height:1.5;
+      min-height:100vh;
+      color:#fff;
+      /* Hero image (replace with your own) */
+      background:url("../images/contact.jpg") center/cover no-repeat fixed;
+    }
+
+    /* Frosted overlay over hero (blurs only the bg image) */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      backdrop-filter:blur(var(--blur));
+      -webkit-backdrop-filter:blur(var(--blur));
+      z-index:-1;
+    }
+
+main.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    padding: 3rem 1.5rem;
+    margin-inline: auto;
+}
+
+.contact-card {
+    backdrop-filter: blur(calc(var(--blur) * .6));
+    -webkit-backdrop-filter: blur(calc(var(--blur) * .6));
+    border-radius: var(--radius);
+    padding: 2rem 2.25rem;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+.contact-form {
+    background: var(--clr-form);
+}
+
+.contact-info {
+    background: var(--clr-info);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+/* ----------  Form styling  ---------- */
+form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    margin-bottom: .45rem;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    background: rgba(255, 255, 255, .85);
+    color: #222;
+    font-size: 1rem;
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 124, 1, 0.7);
+    transform: translateY(-2px);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button.send-btn {
+    padding: .85rem 1.75rem;
+    background: #fff;
+    color: orange;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: .65rem;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .12);
+    margin-top: .3rem;
+}
+
+button.send-btn:hover {
+    background: rgb(255, 242, 217);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+}
+
+/* ----------  Info section  ---------- */
+.info-grid {
+    display: grid;
+    gap: 1.5rem 2rem;
+}
+
+@media(min-width:500px) {
+    .info-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+.info-item h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: .35rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity .25s;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+/* ----------  Accessibility tweak for reduced blur  ---------- */
+@media(prefers-reduced-transparency:reduce) {
+
+    body::before,
+    .card {
+        backdrop-filter: none !important;
+    }
+}

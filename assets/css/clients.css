@@ -1,0 +1,52 @@
+.client-section{
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 40px auto;
+    border: 1px transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+.client-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #001f3f;
+}
+.client-section h4{
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+    color: orange;
+}
+
+.client-section p{
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #4b5563;
+}
+.subtext{
+    font-style: italic;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.city-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.city-buttons a{
+    font-size: 1.1rem;
+}
+.btn{
+    background-color: orange;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3 ease;
+}
+.btn:hover{
+    background-color: rgb(233, 152, 1);
+}

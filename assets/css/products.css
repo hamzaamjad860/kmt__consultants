@@ -1,0 +1,85 @@
+.product-section {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    color: #001f3f;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 32px 16px;
+    background: linear-gradient(#ffffff 50%, orange 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon-wrapper {
+    background-color: #001f3f;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.product-card:hover {
+    background-position: 0 100%;
+}
+
+.product-card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #001f3f;
+}
+.product-card:hover a {
+    color: #ffffff;
+}
+
+.product-card:hover p {
+    color: #f0f0f0;
+}
+
+.blinking-text{
+    max-width: 1000px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #001f3f;
+    font-weight: bold;
+    animation: blink 1s infinite;
+    padding: 10px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,128 @@
+ /* ----------  Root + background  ---------- */
+ :root {
+     --clr-form: hsla(247, 65%, 17%, 0.25);
+     --blur: 14px;
+     --radius: 1.25rem;
+     --shadow: 0 12px 24px rgba(0, 0, 0, .15);
+     --transition: .35s cubic-bezier(.42, 0, .29, 1);
+ }
+
+ body {
+     font-family: "Poppins", sans-serif;
+     line-height: 1.5;
+     color: #fff;
+     /* Hero image (replace with your own) */
+     background: url("../images/contact.jpg") center/cover no-repeat fixed;
+ }
+
+ /* Frosted overlay over hero (blurs only the bg image) */
+ body::before {
+     content: "";
+     position: fixed;
+     inset: 0;
+     backdrop-filter: blur(var(--blur));
+     -webkit-backdrop-filter: blur(var(--blur));
+     z-index: -1;
+ }
+
+ main.contact-wrapper {
+     place-content: center;
+     max-width: 600px;
+     padding: 3rem 1.5rem;
+     margin: 10px auto;
+ }
+
+ .contact-card {
+     backdrop-filter: blur(calc(var(--blur) * .6));
+     -webkit-backdrop-filter: blur(calc(var(--blur) * .6));
+     border-radius: var(--radius);
+     padding: 2rem 2.25rem;
+     box-shadow: var(--shadow);
+     border: 1px solid rgba(255, 255, 255, .25);
+     max-width: 600px;
+     margin: 40px;
+     overflow: hidden;
+ }
+
+ .contact-form {
+     background: var(--clr-form);
+ }
+
+ .contact-info {
+     background: var(--clr-info);
+ }
+
+ h2 {
+     font-size: 1.8rem;
+     font-weight: 600;
+     margin-bottom: 1.25rem;
+ }
+
+ /* ----------  Form styling  ---------- */
+ form .field {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 1rem;
+ }
+
+ label {
+     margin-bottom: .45rem;
+     font-weight: 500;
+ }
+
+ input,
+ textarea,
+ select,
+ option {
+     padding: .50rem 0.75rem;
+     border-radius: .5rem;
+     border: none;
+     background: rgba(255, 255, 255, .85);
+     color: #222;
+     font-size: 1rem;
+     transition: box-shadow var(--transition), transform var(--transition);
+ }
+
+ input:focus,
+ textarea:focus,
+ select:focus,
+ option:focus {
+     outline: none;
+     box-shadow: 0 0 0 3px rgba(108 124 239 / 70%);
+     transform: translateY(-2px);
+ }
+
+ textarea {
+     resize: vertical;
+     min-height: 80px;
+ }
+
+ button.send-btn {
+     padding: .85rem 1.75rem;
+     background: #fff;
+     color: #001f3f;
+     font-size: 1rem;
+     font-weight: 600;
+     border: none;
+     border-radius: .65rem;
+     cursor: pointer;
+     transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, .12);
+     margin-top: .3rem;
+ }
+
+ button.send-btn:hover {
+     background: rgb(224, 217, 255);
+     transform: translateY(-2px);
+     box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+ }
+ .login-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.contact-card a {
+    font-size: 1rem;
+    color: white;
+ }

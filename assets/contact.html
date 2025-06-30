@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta content="Home" name="keywords">
+    <meta content="Home" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- hedaer starts here  -->
+    <header class="navbar">
+
+        <div class="nav">
+            <a href="http://www.kmtcpk.com">
+                <img src="./images/logo.png" alt="KMTCPK">
+            </a>
+
+            <div class="nav-items">
+                <nav class="nav-links">
+                    <a href="./home.html">Home</a>
+                    <a href="./about.html">About us</a>
+                    <a href="./clients.html">Clients</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./downloads.html">Downloads</a>
+                    <a href="./contact.html">Contact Us</a>
+                </nav>
+                <!-- <div class="divider"></div> -->
+                <p class="slogan">We make difficult things, <span>Easy</span></p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="./members-login.html" class="login-btn">Member Login</a>
+            <a href="./registration.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+
+
+    <!-- contact us form section starts here  -->
+
+
+    <main class="contact-wrapper">
+        <!-- ===== Contact Form ===== -->
+        <section class="contact-card contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="http://localhost:8000" method="post">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required placeholder="Your full name">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" required placeholder="How can we help?">
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your project…"></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- ===== Addresses & Phones ===== -->
+        <section class="contact-card contact-info">
+            <h2>Get in Touch</h2>
+            <div class="info-grid">
+
+                <div class="info-item">
+                    <h3>Sales Office</h3>
+                    <p>
+                        Suit.# 8, First Floor,<br>
+                        Zohra Heights, Main Market, <br>
+                        Gulberg-II, Lahore - Pakistan
+                    </p>
+                    <h3>Business Office</h3>
+                    <p>
+                        Office # 4, First Floor,<br>
+                        Abbas Trade Center, PIA <br>
+                        Main Boulevard Road, Lahore
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:info@kmtcpk.com">info@kmtcpk.com</a><br>
+                        <a href="mailto:khalid@kmtcpk.com">khalid@kmtcpk.com</a>
+                        <a href="mailto:sales@kmtcpk.com">sales@kmtcpk.com</a>
+                        <a href="mailto:support@kmtcpk.com">support@kmtcpk.com</a>
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>
+                        <a href="tel:+923001234567">+92 300 428 9654</a><br>
+                        <a href="tel:+923221234567">+92 345 412 3708</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!-- footer starts here  -->
+
+
+    <footer class="footer">
+        <!-- <div class="address">
+            <h3>Sales Office</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Suit.# 8, First Floor, Zohra Heights, Main Market, Gilberg-II,
+                Lahore - Pakistan</p>
+            <h3>Buisness Office</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Office # 4, First Floor, Abbas Trade Center, PIA Main Boulevard
+                Road, Lahore - Pakistan</p>
+            <h3>Email Addresses</h3>
+            <p><i class="fas fa-envelope"></i> info@kmtcpk.com - for any type of information</p>
+            <p><i class="fas fa-envelope"></i> khalid@kmtcpk.com - to contact MR. Khalid Mehmood</p>
+            <p><i class="fas fa-envelope"></i> sales@kmtcpk.com - for business queries</p>
+            <p><i class="fas fa-envelope"></i> support@kmtcpk.com - to support services</p>
+            <h3>Phone</h3>
+            <p> <i class="fab fa-whatsapp"></i>+92 300 4289654</p>
+            <p> <i class="fab fa-whatsapp"></i>+92 345 4123708</p>
+        </div> -->
+        <div class="footer-links">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./services.html">Services</a>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./members-login.html">Members</a>
+            <a href="./downloads.html">Downloads</a>
+            <a href="./contact.html">Contact Us</a></li>
+            <a href="./sitemap.html">Sitemap</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span>&nbsp;&nbsp;KMT Consultants</p>
+        </div>
+    </footer>
+
+    <!-- footer ends here  -->
+
+    <!-- <script src="./js/contact.js"></script> -->
+
+</body>
+
+</html>
